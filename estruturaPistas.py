@@ -55,12 +55,15 @@ class Pistas:
             if jogador1.pontos > 0:
                 print(f'{jogador1.nome} perdeu 1 ponto')
                 jogador1.pontos -= 1
+            elif PcPLayer.pontos > 0:
+                print(f'{jogador1.nome} perdeu 1 ponto')
+                PcPLayer.pontos -= 1
 
         return "Confronto"
 
     @staticmethod
     def pistas(jogador1, PcPLayer):
-        # roladaDeDadoPlayer, roladaDeDadoPC = utilities.Dado.jogadaDeDado(jogador1, PcPLayer)
+        roladaDeDadoPlayer, roladaDeDadoPC = utilities.Dado.jogadaDeDado(jogador1, PcPLayer)
 
         pistaAleatoria = [
             Pistas.curva,

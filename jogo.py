@@ -34,6 +34,7 @@ while voltas < 5:
     
     print(f'A pista escolhida foi: {nomePista} \n')
     
+    
     voltas += 1
     print(f'Número de voltas: {voltas}🏎️🏁')
     time.sleep(3)
